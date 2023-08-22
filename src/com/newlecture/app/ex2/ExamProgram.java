@@ -1,6 +1,8 @@
 package com.newlecture.app.ex2;
 
 import java.io.FileOutputStream;
+import java.io.PrintWriter;
+import java.nio.charset.Charset;
 
 public class ExamProgram {
 
@@ -15,10 +17,9 @@ public class ExamProgram {
    		kor3 = 80;
    		
    		//성적 저장
-   		FileOutputStream exam = new FileOutputStream(null)
-   		
-   		
-   		
+   		FileOutputStream fos = new FileOutputStream("res/data1.txt");
+//   	PrintStream fout = new PrintStream(fos, false, "UTF-8");
+		PrintWriter fout2 = new PrintWriter(fos,true, Charset.forName("UTF-8"));
    		
    		
    		//성적 출력
