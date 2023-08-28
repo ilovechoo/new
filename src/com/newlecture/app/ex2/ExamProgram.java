@@ -18,7 +18,7 @@ public class ExamProgram {
 		int total;
 		float avg;
 		
-		// 성적입력
+		// 성적입력		
    		kor1 = 0;
    		kor2 = 0;	
    		kor3 = 0;

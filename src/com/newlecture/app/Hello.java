@@ -17,11 +17,15 @@ class Hello{
    		byte x = (byte)300; //2^7-1
    		
 	  	 total = kor1 + kor2 + kor3;
-	  	 avg = total / 3;
+	  	 avg = total / 3.0f; //묵시적인 형변환
+	  	 
+//	  	 total = kor1 + kor2 + kor3;
+//	  	 avg = (float)(total / 3.0); //명시적인 형변환
 		
+	  	 
       	 //성적 출력
 	  	System.out.printf("total is %d\n" , /* 정수 값*/ total);
-		System.out.printf("avg is %f\n" , avg);
+		System.out.printf("avg is %.2f\n" , avg); //소수점 자리값 지정
 	    
 		}
   	}
