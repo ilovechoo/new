@@ -21,7 +21,7 @@ public class Program {
 		
 		{
 		String line = fscan.nextLine();
-		String name = line.substring(1,3);
+		String name = line.substring(1,36);
 		fout.println(name);
 		}
 		{
