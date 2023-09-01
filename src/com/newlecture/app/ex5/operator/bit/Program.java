@@ -23,10 +23,10 @@ public class Program {
 		fis.read();
 		
 		//추가로 4바이트는 정수형 변수 n1,n2,n3,n4에 저장
-		int n1 = fis.read(); //a byte of data, -1(int)
-		int n2 = fis.read(); 
-		int n3 = fis.read(); 
-		int n4 = fis.read(); 
+		n1 = fis.read(); //a byte of data, -1(int)
+		n2 = fis.read(); 
+		n3 = fis.read(); 
+		n4 = fis.read(); 
 			 
 			
 		
@@ -47,9 +47,16 @@ public class Program {
 					n2<<8 |
 					n3<<16 |
 					n4<<24;
+		//삼항연산자
+//		String result = (size>100000000)?"우와크다":"적당하다";
+		size = (size>100000000)?0:size; // 크기를 벗어나거나 유효하지 않은 값일 경우 기본 값으로 대치할 수 있다.
+//		System.out.println(result);
 		
 		System.out.printf("size : %d\n", size);
 		
+	}
+	}
+
 	}
 	
 		
@@ -61,6 +68,4 @@ public class Program {
 		
 		 
 
-	}
-
-}
+	
