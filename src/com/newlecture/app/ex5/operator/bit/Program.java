@@ -49,7 +49,7 @@ public class Program {
 					n4<<24;
 		//삼항연산자
 //		String result = (size>100000000)?"우와크다":"적당하다";
-		size = (size>100000000)?0:size; // 크기를 벗어나거나 유효하지 않은 값일 경우 기본 값으로 대치할 수 있다.
+//		size = (size>10000000)?0:size; // 크기를 벗어나거나 유효하지 않은 값일 경우 기본 값으로 대치할 수 있다.
 //		System.out.println(result);
 		
 		System.out.printf("size : %d\n", size);
