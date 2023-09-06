@@ -18,12 +18,18 @@ public class ExamProgram {
 		FileOutputStream fos = new FileOutputStream("res/pic2-copy.bmp");
 		PrintWriter fout = new PrintWriter(fos);
 		
-		int n = fis.read();
+		int i = 0;
+		while(i<18) {
+			fis.read();
+			i++;
+			}
 		
-		while(n != -1) {
-			fos.write(n);
-			n = fis.read();
-		}
+//		int n = fis.read();
+//		
+//		while(n != -1) {
+//			fos.write(n);
+//			n = fis.read();
+//		}
 					
 		fout.close();
 		fos.close();

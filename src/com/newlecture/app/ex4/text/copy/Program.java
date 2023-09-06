@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class Program {
 
 	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
+		
 		FileInputStream fis = new FileInputStream("res/studentsl.data");
 		Scanner fscan = new Scanner(fis);
 		FileOutputStream fos = new FileOutputStream("res/sutentsl-out.data");
